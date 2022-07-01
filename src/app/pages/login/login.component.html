@@ -1,0 +1,14 @@
+<app-loader [loading]="loading"></app-loader>
+<main>
+    <article>
+        <section>
+            <figure>
+                <img src="assets/images/logo.png" alt="">
+            </figure>
+            <div>
+                <app-button [name]="'Login'" [class] ="'red__button'" (clickButtonEvent)="autorizateLogin($event)"></app-button>
+            </div>
+
+        </section>
+    </article>
+</main>

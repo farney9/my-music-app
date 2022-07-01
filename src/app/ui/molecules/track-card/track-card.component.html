@@ -1,0 +1,14 @@
+<div>
+    <figure>
+        <img [src]="cardData?.img" alt="">
+    </figure>
+    <article>
+        <section class="title">{{cardData.nameTrack}}</section>
+        <section>{{cardData.artist}}</section>
+        <section>{{cardData.album}}</section>
+        <section>{{cardData.duration | timeSong}}</section>
+    </article>
+    <section class="icon-favorite" (click)="clickIcon()">
+        <mat-icon aria-hidden="false" aria-label="Favorite" [ngClass]="{'selected' : cardData.favorite}">{{icon}}</mat-icon>
+    </section>
+</div>

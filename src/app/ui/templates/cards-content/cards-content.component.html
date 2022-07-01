@@ -1,0 +1,6 @@
+<article>
+    <section *ngFor="let item of cardList">
+        <app-track-card [card] = "item" [geticon]="icon" (clickIconEvent)="clickIcon($event)"></app-track-card>
+    </section>
+</article>
+

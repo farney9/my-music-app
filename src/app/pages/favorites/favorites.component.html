@@ -1,0 +1,4 @@
+<main class="page">
+    <app-loader [loading]="loading"></app-loader>
+    <app-cards-content [cards]="listTracks" [iconcards] = "'close'" (clickIconEvent)="deteleFavorite($event)"></app-cards-content>
+</main>

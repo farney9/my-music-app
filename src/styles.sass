@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+$colors: (back: #222121, principal: #e93f3f)
+
+@function color($color-name)
+    @return map-get($colors, $color-name)
+
+
+
+body
+    background-color: color(back)
+
+    .page
+        padding-top: 58px

@@ -1,0 +1,34 @@
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <mat-icon class="menu" aria-hidden="false">menu</mat-icon>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand mt-2 mt-lg-0">
+                <img class="logo" src="assets/images/logo.png" height="15" alt="MDB Logo"
+                    loading="lazy" (click)="goPage('HOME')" />
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item" (click)="goPage('HOME')">
+                    <a class="nav-link"  data-toggle="collapse" data-target=".navbar-collapse.show" >Home</a>
+                </li>
+                <li class="nav-item"  (click)="goPage('FAV')">
+                    <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" >Favorites</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-flex align-items-center">
+            <h2 class="user__name">{{porfileData.name}}</h2>
+            <div class="dropdown">
+                <img [src]="porfileData.img" class="rounded-circle" height="25" loading="lazy" />
+            </div>
+            <div class="dropdown exit">
+                <mat-icon class="menu" aria-hidden="false" (click)="logout()">exit_to_app</mat-icon>
+            </div>
+        </div>
+    </div>
+</nav>
