@@ -10,8 +10,8 @@ import { TrackData } from 'custom/models/models';
 })
 export class CommonService {
 
-  urlPrincipalPlayList = environment.urlPlaylist + "/playlists/3lJwVZWRmKWLcrXvEkH31v"
-  urlFavorites = environment.urlPlaylist + "/me/tracks"
+  urlPrincipalPlayList = `${environment.urlPlaylist}/playlists/5s2nvxeIYRBGA7AsC9Ypxw`;
+  urlFavorites = `${environment.urlPlaylist}/me/tracks`;
   urlProfile = environment.urlPlaylist + "/me"
 
   constructor(

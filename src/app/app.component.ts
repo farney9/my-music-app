@@ -8,7 +8,7 @@ import { AuthService } from './shared/services/auth.service';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'mymusicapp';
+  title = 'myMusicApp';
   constructor(
     private router: Router,
     private _auth: AuthService
