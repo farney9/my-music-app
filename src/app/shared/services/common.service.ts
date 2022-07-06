@@ -12,7 +12,7 @@ export class CommonService {
 
   urlPrincipalPlayList = `${environment.urlPlaylist}/playlists/5s2nvxeIYRBGA7AsC9Ypxw`;
   urlFavorites = `${environment.urlPlaylist}/me/tracks`;
-  urlProfile = environment.urlPlaylist + "/me"
+  urlProfile = `${environment.urlPlaylist}/me`;
 
   constructor(
     private http: HttpClient
