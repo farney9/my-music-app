@@ -8,7 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class PagesGuard implements CanActivate {
 
-  constructor(private _auth : AuthService,
+  constructor(
+    private _auth : AuthService,
     private router: Router){}
 
   canActivate(

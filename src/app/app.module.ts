@@ -7,6 +7,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS  } from '@angular/common/http';
 import { InterceptService } from "custom/services/intercept.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UiModule } from './ui/ui.module';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UiModule } from './ui/ui.module';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    UiModule
+    UiModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [
     {
